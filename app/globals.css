@@ -27,7 +27,6 @@ body {
 }
 
 .mweb-fibre-products {
-  font-family: 'Arial', sans-serif;
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 8px;
@@ -35,15 +34,31 @@ body {
 }
 
 .title {
+  font-family: __Inter_033088, __Inter_Fallback_033088;
+  font-size: 36px;
+  line-height: 43.2px;
+  font-weight: 900;
   text-align: center;
   color: #333;
   margin-bottom: 20px;
 }
 
-.provider-select, .price-range-select {
-  margin: 10px 0;
-  width: 100%;
+.selectors-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 20px; 
 }
+
+.provider-select, .price-range-select {
+  flex: 1; 
+  margin: 0 10px; 
+}
+
+.provider-select, .price-range-select {
+  min-width: 250px; 
+}
+
 
 .product-list {
   display: flex;
@@ -68,6 +83,7 @@ body {
 
 .product-card:hover {
   transform: scale(1.05);
+  border-color: #398595;
 }
 
 .provider-logo {
@@ -85,4 +101,8 @@ body {
 .product-provider, .product-price {
   color: #666;
   margin: 5px 0;
+}
+
+.to-mwTealGradientToRight {
+  background-color: #4fb1af;
 }
